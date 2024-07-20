@@ -11,7 +11,6 @@
 body {
   background: #f4f4f4;
   overflow-x: hidden;
-  /* Prevent scrolling of the body */
 }
 
 .app {
@@ -21,30 +20,24 @@ body {
 .sidebar {
   width: 250px;
   height: 100vh;
-  /* Full height of the viewport */
   background-color: #333;
   color: white;
   padding: 20px;
   position: fixed;
-  /* Fix the sidebar position */
   overflow-y: auto;
-  /* Allow scrolling within the sidebar if needed */
 }
 
 main {
   margin-left: 250px;
-  /* Offset the main content to the right of the sidebar */
   width: calc(100% - 250px);
   height: 100vh;
   overflow-y: auto;
-  /* Enable scrolling for the main section */
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
 main::-webkit-scrollbar {
   display: none;
-  /* Hide scrollbar */
 }
 
 p {
@@ -282,13 +275,6 @@ main::-webkit-scrollbar {
   right: 0;
   cursor: pointer;
 }
-
-
-/* .profile {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-} */
 
 .profileDescription {
   text-align: right;
